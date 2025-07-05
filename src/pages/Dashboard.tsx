@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react'
 import {
   BarChart3,
   TrendingUp,
@@ -23,10 +22,7 @@ import {
 } from 'recharts';
 
 function Dashboard() {
-  const [user, setUser] = useState({
-    name: 'Usuario Test',
-    email: 'test@email.com',
-  });
+  const [user] = useState({ name: 'Usuario Test', email: 'test@email.com' })
 
   // Datos simulados para gráficos
   const revenueData = [
